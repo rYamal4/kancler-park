@@ -22,6 +22,10 @@ textarea {
     transition: background-color .2s;
 }
 
+.button:hover {
+    background-color: #000;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -168,7 +172,7 @@ textarea {
 }
 
 .header_bottom_section .main_nav a:hover {
-    color: #ff0055;
+    color: #f04;
 }
 
 .menu_toggle_tablet {
