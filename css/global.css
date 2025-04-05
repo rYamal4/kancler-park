@@ -10,7 +10,7 @@ textarea {
     display: inline-block;
     padding: 9px 16px;
     color: #fff;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 12px;
     font-family: "Open Sans", arial, sans-serif;
     line-height: 17px;
@@ -369,4 +369,101 @@ textarea {
         text-align: left;
     }
 
+}
+
+.product_grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(266px, 266px));
+    gap: 20px;
+    justify-content: center;
+}
+
+.product_card {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.product_card_info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+}
+
+.product_image {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.product_name {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.product_price {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.add_to_cart {
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 769px) {
+    .product_grid {
+        grid-template-columns: 1fr;
+        justify-content: stretch;
+    }
+
+    .product_card {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        text-align: left;
+    }
+
+    .product_image {
+        width: 280px;
+        margin: 0;
+    }
+
+    .product_card_info {
+        flex: 1;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .product_name {
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        margin-bottom: 6px;
+    }
+
+    .product_price {
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .add_to_cart {
+        padding: 8px 14px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
 }
