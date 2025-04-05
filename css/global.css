@@ -130,6 +130,10 @@ textarea {
     height: 100%;
 }
 
+.categories_button:hover {
+    background-color: #f04;
+}
+
 .categories_button img {
     width: 16px;
     height: 16px;
