@@ -298,6 +298,13 @@ textarea {
     color: #f04;
 }
 
+.section_header {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}
+
 .footer_bottom {
     border-top: 1px solid #eee;
     margin-top: 30px;
