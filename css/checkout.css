@@ -1,0 +1,296 @@
+.order_section {
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.order_title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.order_items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.order_item_img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.order_item_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order_item_name {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 4px 0;
+    line-height: 1.4;
+}
+
+.order_item_qty {
+    font-size: 13px;
+    color: #898F97;
+    margin: 0;
+}
+
+.location_section {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 32px;
+}
+
+.location_title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.location_select_wrapper {
+    max-width: 400px;
+}
+
+.location_select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.delivery_section {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 32px;
+}
+
+.delivery_title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.delivery_option {
+    margin-bottom: 12px;
+}
+
+.radio_label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    cursor: pointer;
+    position: relative;
+    padding-left: 28px;
+}
+
+.radio_input {
+    display: none;
+}
+
+.radio_custom {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #FF006A;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.radio_input:checked+.radio_custom::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #FF0044;
+    border-radius: 50%;
+}
+
+.contact_section {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 32px;
+}
+
+.contact_title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 480px;
+}
+
+.contact_row {
+    display: flex;
+    gap: 12px;
+}
+
+.contact_input {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact_input.half {
+    flex: 1;
+}
+
+.payment_section {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 32px;
+}
+
+.payment_title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.payment_option {
+    margin-bottom: 12px;
+}
+
+.radio_label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 28px;
+}
+
+.radio_input {
+    display: none;
+}
+
+.radio_custom {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #FF0044;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.radio_input:checked+.radio_custom::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #FF0044;
+    border-radius: 50%;
+}
+
+.payment_info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.payment_method {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.radio_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000;
+    margin: 0;
+}
+
+.payment_note {
+    font-size: 12px;
+    color: #989F97;
+    margin: 2px 0 0;
+}
+
+.comment_section {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 32px;
+    max-width: 720px;
+}
+
+.comment_title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.comment_textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.submit_section {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 32px;
+}
+
+.submit_button {
+    width: 368px;
+    height: 52px;
+    padding: 14px;
+    background-color: #FF0044;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit_button:hover {
+    background-color: #000;
+}
+
+.submit_note {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #000;
+    line-height: 1.4;
+}

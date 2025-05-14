@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/checkout.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -75,6 +77,146 @@
   <section class="page_info">
     <h1 class="page_title">Оформление заказа</h1>
   </section>
+
+  <section class="cart_section">
+    <div class="container">
+      <div class="cart_content_container">
+        <div class="cart_left">
+
+          <div class="order_section">
+            <h2 class="order_title">Состав заказа</h2>
+            <div class="order_items">
+              <div class="order_item">
+                <img src="images/item_1.png" alt="Товар" class="order_item_img">
+                <div class="order_item_info">
+                  <p class="order_item_name">Бумага 10цв 200л.интенсив и пастель O.Space ф.А4 80г/м</p>
+                  <p class="order_item_qty">1 шт.</p>
+                </div>
+              </div>
+              <div class="order_item">
+                <img src="images/item_1.png" alt="Товар" class="order_item_img">
+                <div class="order_item_info">
+                  <p class="order_item_name">Бумага 10цв 200л.интенсив и пастель O.Space ф.А4 80г/м</p>
+                  <p class="order_item_qty">1 шт.</p>
+                </div>
+              </div>
+              <div class="order_item">
+                <img src="images/item_1.png" alt="Товар" class="order_item_img">
+                <div class="order_item_info">
+                  <p class="order_item_name">Бумага 10цв 200л.интенсив и пастель O.Space ф.А4 80г/м</p>
+                  <p class="order_item_qty">1 шт.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="location_section">
+            <h2 class="location_title">Населённый пункт</h2>
+            <div class="location_select_wrapper">
+              <select class="location_select">
+                <option>Йошкар-Ола</option>
+                <option>Москва</option>
+                <option>Санкт-Петербург</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="delivery_section">
+            <h2 class="delivery_title">Способ получения</h2>
+            <div class="delivery_option">
+              <label class="radio_label">
+                <input type="radio" name="delivery" class="radio_input" checked>
+                <span class="radio_custom"></span>
+                Бесплатная доставка по Йошкар-Оле (ПН-ПТ с 9:00–18:00) — Бесплатно
+              </label>
+            </div>
+            <div class="delivery_option">
+              <label class="radio_label">
+                <input type="radio" name="delivery" class="radio_input">
+                <span class="radio_custom"></span>
+                Доставка по Йошкар-Оле (ПН-ПТ с 9:00–18:00) — 200.00 ₽
+              </label>
+            </div>
+            <div class="delivery_option">
+              <label class="radio_label">
+                <input type="radio" name="delivery" class="radio_input">
+                <span class="radio_custom"></span>
+                Самовывоз — Бесплатно
+              </label>
+            </div>
+          </div>
+
+          <div class="contact_section">
+            <h2 class="contact_title">Контактная информация</h2>
+            <div class="contact_form">
+              <input type="text" placeholder="Улица" class="contact_input">
+              <div class="contact_row">
+                <input type="text" placeholder="Дом" class="contact_input half">
+                <input type="text" placeholder="Квартира" class="contact_input half">
+              </div>
+              <input type="text" placeholder="Фамилия и Имя" class="contact_input">
+              <div class="contact_row">
+                <input type="email" placeholder="Электронная почта" class="contact_input half">
+                <input type="tel" placeholder="Телефон" class="contact_input half">
+              </div>
+            </div>
+          </div>
+
+          <div class="payment_section">
+            <h2 class="payment_title">Способ оплаты</h2>
+            <div class="payment_option">
+              <label class="radio_label">
+                <input type="radio" name="payment" class="radio_input" checked>
+                <span class="radio_custom"></span>
+                <div class="payment_info">
+                  <span class="radio_text">Оплата онлайн</span>
+                  <p class="payment_note">Оплата с произвольной банковской карты</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="comment_section">
+            <h2 class="comment_title">Примечание к заказу (необязательно)</h2>
+            <textarea class="comment_textarea"
+              placeholder="Примечания к вашему заказу, например, особые пожелания отделу доставки."></textarea>
+          </div>
+
+          <div class="submit_section">
+            <button type="submit" class="submit_button">Подтвердить заказ</button>
+            <p class="submit_note">
+              Нажимая на кнопку «Подтвердить заказ», вы даёте согласие на обработку своих персональных данных.
+            </p>
+          </div>
+
+
+        </div>
+
+        <div class="cart_right">
+          <div class="cart_discount">
+            <input type="text" placeholder="Промокод на скидку" class="cart_input">
+            <button class="button">Применить</button>
+          </div>
+
+          <div class="cart_summary">
+            <div class="cart_summary_row with-border">
+              <span>Товары</span>
+              <span>1443 ₽</span>
+            </div>
+            <div class="cart_summary_row total">
+              <span>Итого</span>
+              <span>1443 ₽</span>
+            </div>
+            <button class="button cart_checkout_btn">Купить</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container footer_container">
       <div class="footer_column">
